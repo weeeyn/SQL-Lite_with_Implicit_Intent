@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="15dp"
+    android:orientation="vertical"
+    tools:context=".Records">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="CUSTOMER INFORMATION"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="8dp"
+        android:textSize="15dp"
+        android:text="First Name"/>
+
+    <EditText
+        android:id="@+id/edFname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="8dp"
+        android:textSize="15dp"
+        android:text="Middle Initial"/>
+
+    <EditText
+        android:id="@+id/edMI"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="8dp"
+        android:textSize="15dp"
+        android:text="Last Name"/>
+
+    <EditText
+        android:id="@+id/edLname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="8dp"
+        android:textSize="15dp"
+        android:text="Email Address"/>
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:inputType="textWebEmailAddress"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="8dp"
+        android:textSize="15dp"
+        android:text="Contact Number"/>
+
+    <EditText
+        android:id="@+id/edContact"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#7A7979"
+        android:textSize="20dp"
+        android:text="UPDATE RECORD"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textSize="20dp"
+        android:text="DELETE RECORD"/>
+
+</LinearLayout>

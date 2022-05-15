@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2F2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F2F2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="CUSTOMER INFORMATION"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="First Name"/>
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:hint="First Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Middle Initial"/>
+
+        <EditText
+            android:id="@+id/etMI"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:hint="Middle Initial" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Last Name"/>
+
+        <EditText
+            android:id="@+id/etLname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:hint="Last Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Email Address"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:inputType="textWebEmailAddress"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:hint="Email Address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Contact Number"/>
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:hint="Contact Number" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="SAVE RECORD"
+            android:onClick="addRecord"/>
+
+        <Button
+            android:id="@+id/btnViewRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="VIEW RECORD"
+            android:onClick="viewList"/>
+
+        <Button
+            android:id="@+id/btnViewList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="VIEW LIST"
+            android:onClick="viewRecord"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:text="DIAL A NUMBER"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Contact Number"/>
+
+        <EditText
+            android:id="@+id/etConDial"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:inputType="number"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnDial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2144F3"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Dial"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:text="SEND AN EMAIL"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Email Address"/>
+
+        <EditText
+            android:id="@+id/etEmailAd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Subject"/>
+
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Message"/>
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#009644"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Send"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:text="SEARCH USING BROWSER"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:textSize="15dp"
+            android:text="Product Search"/>
+
+        <EditText
+            android:id="@+id/etProduct"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Search"/>
+
+    </LinearLayout>
+</ScrollView>
